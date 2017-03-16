@@ -6,7 +6,7 @@ $(document).ready( () => {
 
   // let url = "../data/employees.json";
   // let url = "http://netflixroulette.net/api/api.php?title=";
-  let url = "http://netflixroulette.net/api/api.php?";
+  let url = "https://netflixroulette.net/api/api.php?";
   let searchTitle = document.querySelector('.searchInput');
   const searchButton = document.querySelector('.searchButton');
   const searchSelection = document.querySelector('.searchType');
@@ -97,7 +97,7 @@ $(document).ready( () => {
     });
 
 
-    url = "http://netflixroulette.net/api/api.php?"
+    url = "https://netflixroulette.net/api/api.php?"
   });
 
 
