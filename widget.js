@@ -47,6 +47,7 @@ $(document).ready( () => {
       // console.log(url);
     }
     $.get(url, function(response) {
+      console.log(url);
       // console.log(response);
 
       //if it's an actor or director:
@@ -60,8 +61,14 @@ $(document).ready( () => {
 
       // Check if user is searching by title and map single item returned
       if (type === "title") {
+        //make image start with 'https' to avoid security error
+          let image = response.poster;
+          let imageHttp = image.split(":");
+          imageHttp[0] = "https:";
+          let secureImage = imageHttp.join('');
+
             let movieData = {
-          'poster': response.poster,
+          'poster': secureImage,
           'title': response.show_title,
           'summary': response.summary,
           'year': response.release_year
@@ -75,8 +82,12 @@ $(document).ready( () => {
         let actorData = response;
         let actorCollection = [];
         for (let i = 0; i < actorData.length; i += 1) {
+          let image = actorData[i].poster;
+          let imageHttp = image.split(":");
+          imageHttp[0] = "https:";
+          let secureImage = imageHttp.join('');
           let actorProps = {
-            'poster': actorData[i].poster,
+            'poster': secureImage,
             'title': actorData[i].show_title,
             'summary': actorData[i].summary,
             'year': actorData[i].release_year
