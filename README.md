@@ -1,5 +1,5 @@
-# Netfix-Search-App
+## Netfix-Search-App
 
-# Languages/Frameworks used:
+### Languages/Frameworks used:
 
-# JavaScript, jQuery, AJAX, Handlebars
+### JavaScript, jQuery, AJAX, Handlebars
