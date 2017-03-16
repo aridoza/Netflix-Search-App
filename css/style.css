@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 980px;
+  background: radial-gradient(farthest-corner at 50px 50px, #f5f5dc 0%, firebrick 100%),
+              linear-gradient(225deg, #fff, transparent 90%),
+              linear-gradient(firebrick, transparent 90%) no-repeat center;
+  background-size: cover;
+}
+
+.main-container {
+
+}
+
+.search-content-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.searchType {
+  width: 140px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.searchInput {
+  width: 300px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.searchButton {
+  background-color: #fff;
+  color: firebrick;
+  font-size: 23px;
+  border: 2px solid firebrick;
+  width: 160px;
+  height: 45px;
+  padding-bottom: -15px;
+}
+
+.searchButton:hover {
+  background-color: firebrick;
+  border: 2px solid firebrick;
+  color: #fff;
+}
+
+.return-data-container {
+  width: 70%;
+}
+
+.movie-list {
+  padding-top: 120px;
+  padding-left: 500px;
+  list-style-type: none;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.release-year {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.netflix-logo {
+  width: 180px;
+  height: 80px;
+}
